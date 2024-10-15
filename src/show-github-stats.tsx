@@ -59,7 +59,10 @@ export default function Command() {
   const { currentStreak, longestStreak } = calculateStreak(contributionDays);
 
   return (
-    <MenuBarExtra tooltip="Your contribution stats" title={`🔥 ${currentStreak} - 🍎 ${longestStreak}`}>
+    <MenuBarExtra
+      tooltip="Your contribution stats"
+      title={`🔥 ${currentStreak}  🍎 ${longestStreak}  📊 ${yearContributions}`}
+    >
       <MenuBarExtra.Section title="Streaks">
         <MenuBarExtra.Item title={`🔥 ${currentStreak}`} subtitle=" - Current Streak" onAction={() => {}} />
         <MenuBarExtra.Item title={`🍎 ${longestStreak}`} subtitle=" - Longest Streak" onAction={() => {}} />
