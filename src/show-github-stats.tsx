@@ -61,14 +61,14 @@ export default function Command() {
   return (
     <MenuBarExtra
       tooltip="Your contribution stats"
-      title={`🔥 ${currentStreak}  🍎 ${longestStreak}  📊 ${yearContributions}`}
+      title={`🔥 ${currentStreak}  🍎 ${longestStreak}  💪 ${todayContributions}  📊 ${yearContributions}`}
     >
       <MenuBarExtra.Section title="Streaks">
         <MenuBarExtra.Item title={`🔥 ${currentStreak}`} subtitle=" - Current Streak" onAction={() => {}} />
         <MenuBarExtra.Item title={`🍎 ${longestStreak}`} subtitle=" - Longest Streak" onAction={() => {}} />
       </MenuBarExtra.Section>
       <MenuBarExtra.Section title="Contribution stats">
-        <MenuBarExtra.Item title={`👨🏻‍💻 ${todayContributions}`} subtitle=" - Today" onAction={() => {}} />
+        <MenuBarExtra.Item title={`💪 ${todayContributions}`} subtitle=" - Today" onAction={() => {}} />
         <MenuBarExtra.Item title={`💼 ${thisMonthContributions}`} subtitle=" - This month" onAction={() => {}} />
         <MenuBarExtra.Item title={`🗓️ ${past30DaysContributions}`} subtitle=" - Last 30 days" onAction={() => {}} />
         <MenuBarExtra.Item title={`📊 ${yearContributions}`} subtitle=" - Last 365 days" onAction={() => {}} />
